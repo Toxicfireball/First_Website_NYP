@@ -1,0 +1,446 @@
+.container {
+  overflow: hidden;
+}
+hr {
+  width: 100%;
+border: 20px solid black;
+border-radius: 0px;
+}
+
+.filterDiv {
+
+  display: none; /* Hidden by default */
+}
+.LOr{
+  float: left;
+  background-image:url("../Images/LOTR.png");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.ASOIAF{
+  float: left;
+  background-image:url("../Images/wp8115360.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+
+#sw{
+  float: left;
+  background-image:url("../Images/Sw.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.Ex{
+  float: left;
+  background-image:url("../Images/exp.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.WFB{
+  float: left;
+  background-image:url("../Images/Whfb.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+
+.Wh40K{
+  float: left;
+  background-image:url("../Images/W40K.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+
+
+.BFG {
+  float: left;
+  background-image:url("../Images/erir7A9.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+
+#containerB {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+#forhead{
+
+  font-size:36px;
+  font-weight: bold;
+}
+#forstu{
+  font-size:20px;
+
+}
+
+h1{
+
+  margin-bottom: 15px;
+
+}
+h2 {
+
+  margin-bottom: 15px;
+}
+nav {
+
+  margin-bottom: 15px;
+}
+
+#ulA {
+
+margin-bottom: 10rem;
+}
+
+/* Centered text */
+div {
+
+}
+
+header {
+ background: black;
+ color: white;
+ height: 120px;
+}
+.sw {
+  float: left;
+  background-image:url("../Images/Sw.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.txt{
+  margin-top: 30px;
+  margin-left: 16px;
+}
+.sw .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.Wh40K .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.WFB .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.ASOIAF .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+.Ex .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.LOr .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+
+.BFG .add {
+
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+.Wh40K:hover .add{
+  visibility: visible;
+  opacity: 1;
+}
+.WFB:hover .add{
+  visibility: visible;
+  opacity: 1;
+}
+.sw:hover .add {
+  visibility: visible;
+  opacity: 1;
+}
+
+.ASOIAF:hover .add {
+  visibility: visible;
+  opacity: 1;
+}
+.Ex:hover .add {
+  visibility: visible;
+  opacity: 1;
+}
+
+.LOr:hover .add {
+  visibility: visible;
+  opacity: 1;
+}
+
+.BFG:hover .add {
+  visibility: visible;
+  opacity: 1;
+}
+#aboutH {
+
+  height: 70px;
+  background-color: #cccccc;
+  overflow: hidden;
+  background-size: cover;
+  background-image: linear-gradient(yellow, green);
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin:0px;
+}
+
+#aboutXt {
+
+
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}
+
+#imageB {
+
+  width:100%;
+  height: 800px
+}
+
+ol {
+
+  list-style-position: inside;
+}
+li a {
+
+  text-decoration: none;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  padding: 10px ;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+h1 {
+
+  font-size:2em;
+}

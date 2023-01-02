@@ -1,0 +1,253 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Feedbackform</title>
+</head>
+<body>
+<div>
+<link rel="stylesheet" type="text/css" href="Feedback.css"/>
+</div>
+<div>
+
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyA44QeCkEhOj8vWCDeEZYn0FfLi4sAjp1w",
+    authDomain: "realmofstories.firebaseapp.com",
+    databaseURL: "https://realmofstories-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "realmofstories",
+    storageBucket: "realmofstories.appspot.com",
+    messagingSenderId: "85744+8618205",
+    appId: "1:857448618205:web:ba3ebf8093dcd34320a334",
+    measurementId: "G-4P6GJCLTZQ"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+ var tday = new Date();
+ var ti=tday.getDate() + " " + tday;
+
+
+
+  function writedata2(){
+    var rate_value="No input";
+    var rate_value2="No input";
+    var rate_value3="No input";
+    if (document.getElementById('rating1a').checked) {
+rate_value = document.getElementById('rating1a').value;
+}
+else if (document.getElementById('rating1b').checked) {
+rate_value = document.getElementById('rating1b').value;
+}
+else if (document.getElementById('rating1c').checked) {
+rate_value = document.getElementById('rating1c').value;
+}
+else if (document.getElementById('rating1d').checked) {
+rate_value = document.getElementById('rating1d').value;
+}
+
+if (document.getElementById('rating2a').checked) {
+rate_value2 = document.getElementById('rating2a').value;
+}
+else if (document.getElementById('rating1b').checked) {
+rate_value2 = document.getElementById('rating2b').value;
+}
+else if (document.getElementById('rating2c').checked) {
+rate_value2 = document.getElementById('rating2c').value;
+}
+else if (document.getElementById('rating2d').checked) {
+rate_value2 = document.getElementById('rating2d').value;
+}
+
+if (document.getElementById('rating3a').checked) {
+rate_value3 = document.getElementById('rating3a').value;
+}
+else if (document.getElementById('rating3b').checked) {
+rate_value3 = document.getElementById('rating3b').value;
+}
+else if (document.getElementById('rating3c').checked) {
+rate_value3 = document.getElementById('rating3c').value;
+}
+else if (document.getElementById('rating2d').checked) {
+rate_value3 = document.getElementById('rating3d').value;
+}
+    firebase.database().ref(String(ti + " Feedback")).set({
+      like:document.getElementById("like").value,
+      improv:document.getElementById("improv").value,
+      sug:document.getElementById("sug").value,
+      val1:rate_value,
+      val2:rate_value2,
+      val3:rate_value3,
+
+
+    })
+
+  }
+
+  function al(){
+
+    alert("You have submitted! Thank you for your feedback")
+  }
+
+  function run(){
+    writedata2();
+   al();
+
+
+  }
+
+  function validateForm() {
+  let a = document.forms["myForm"]["rating1"].value;
+  let b = document.forms["myForm"]["rating2"].value;
+  let c = document.forms["myForm"]["rating3"].value;
+  let d = document.forms["myForm"]["rating4"].value;
+  let e = document.forms["myForm"]["inp1"].value;
+  let f = document.forms["myForm"]["inp2"].value;
+  let g = document.forms["myForm"]["inp3"].value;
+  if (a == "" && b== " " && c == "" && d=="" && e=="" && f=="" && g== "")  {
+    alert("Name must be filled out");
+    return false;
+  }
+  else{
+    return true;
+    alert("You have submitted! Thank you for your feedback")
+  }
+}
+
+</script>
+<script type="text/javascript" src="../main.js">
+</script>
+</div>
+<script>
+openNav();
+closeNav();
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+
+<header>
+
+<div class="header">
+<h1>Seach for stories here</h1>
+
+
+
+        <div id="mySidenav" class="sidenav">
+              <nav>
+                <ul>
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <li><a href="../index.html"><div class="tooltip">Home<span class="tooltiptext"><p class="hov">Homepage here</p></span></div></a></li>
+                  <li><a href="../Filter/filter.html"><div class="tooltip">Search<span class="tooltiptext"><p class="hov">Find a story to your taste here</p></span></div></a></li>
+                  <li><a href="../Submission/sub.html" ><div class="tooltip">Submission<span class="tooltiptext"><p class="hov">Want to submit? Click here</p></span></div></a></li>
+                  <li><a href="../List/List.html"><div class="tooltip">List<span class="tooltiptext"><p class="hov">All the univerese currently here! Including those waiting approval</p></span></div></a></li>
+                  <li><a href="#" class="current" ><div class="tooltip">Feedback<span class="tooltiptext"><p class="hov">Have any feedback?</p></span></div></a></li>
+                  <li><a href="../Credits/credits.html"> <div class="tooltip">Credits<span class="tooltiptext"><p class="hov">Acknowledgments of sources</p></span></div></a></li>
+
+                </ul>
+              </nav>
+              </div>
+              <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+      <div class="spac">
+
+
+
+<p id="new">Finding new worlds and stories have never been easier!</p>
+</div>
+</header>
+
+  <div id="container">
+
+
+
+      <fieldset ><legend id="forhead">Feedback Form</legend>
+        <div id="forstu">
+      <div class="spa">
+      <p>How do you find the website so far?</p>
+
+
+        <input type="radio" name="rating1" id='rating1a' value="Excellent">
+        <label for="radio">Excellent</label>
+         <input type="radio" name="rating1" id="rating1b" value="Good">
+         <label for="rating2">Good</label>
+         <input type="radio" name="rating1" id="rating1c" value="Medicore">
+         <label for="rating3">Mediocore</label>
+         <input type='radio' name="rating1" id="rating1d" value="poor">
+         <label for="rating4">Poor</label>
+       </div>
+
+       <div class="spa">
+       <p>How do you find the UI?</p>
+
+         <input type="radio" name="rating2" id='rating2a' value="Excellent">
+         <label for="radio">Excellent</label>
+          <input type="radio" name="rating2" id="rating2b" value="Good">
+          <label for="rating2">Good</label>
+          <input type="radio" name="rating2" id="rating2c" value="Mediocore">
+          <label for="rating3">Mediocore</label>
+          <input type='radio' name="rating2" id="rating2d" value="poor">
+          <label for="rating4">Poor</label>
+        </div>
+
+        <div class="spa">
+        <p>How does the website function for you?</p>
+        <div >
+          <input type="radio" name="rating3" id='rating3a' value="Excellent">
+          <label for="radio">Excellent</label>
+           <input type="radio" name="rating3" id="rating3b" value="Good">
+           <label for="rating2">Good</label>
+           <input type="radio" name="rating3" id="rating3c" value="Mediocore">
+           <label for="rating3">Mediocore</label>
+           <input type='radio' name="rating3" id="rating3d" value="poor">
+           <label for="rating4">Poor</label>
+         </div>
+       </div>
+<div class="spa">
+         <p>What do you like most about this website?</p>
+         <input type="text" name="inp1" id="like">
+
+</div>
+<div class="spa">
+        <p>What are some areas for improvment?</p>
+        <input type="text" name="inp2" id="improv">
+</div>
+        <div class="spa">
+        <p>Do you have any suggestions?:</p>
+        <input type="text" name="inp3" id="sug">
+</div>
+
+        <div>
+          <div class="spab">
+        <button class="button" name="submit" onclick="run()" type="submit" id="contact-submit" data-submit="Thank you for your feedback!">Submit</button>
+      </div>
+</diV>
+    </div>
+
+</div>
+</fieldset>
+
+</div>
+
+</body>
+<script>
+
+document.getElementById('improv').style.height="70px";
+document.getElementById('improv').style.width="600px";
+document.getElementById('improv').style.fontSize="14pt";
+document.getElementById('sug').style.height="70px";
+document.getElementById('sug').style.width="600px";
+document.getElementById('sug').style.fontSize="14pt";
+document.getElementById('like').style.height="70px";
+document.getElementById('like').style.width="600px";
+document.getElementById('like').style.fontSize="14pt";
+</script>
+</div>

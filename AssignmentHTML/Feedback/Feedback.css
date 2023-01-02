@@ -1,0 +1,215 @@
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+
+#containerB {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+hr {
+  width: 100%;
+border: 20px solid black;
+border-radius: 0px;
+}
+.spa {
+
+  padding: 15px;
+
+}
+.spab{
+
+  padding: 25px;
+}
+
+.button {
+     background-color:white;
+     color:black;
+     padding: 10px;
+     border-radius: 10px;
+     -moz-border-radius: 10px;
+     -webkit-border-radius: 10px;
+     margin:10px
+ }
+
+ .small-btn {
+     width: 50px;
+     height: 25px;
+ }
+
+ .medium-btn {
+     width: 70px;
+     height: 30px;
+ }
+
+ .big-btn {
+     width: 90px;
+     height: 40px;
+ }
+#container {
+background-image:url("https://images.unsplash.com/photo-1528484701073-2b22dc76649e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80");background-repeat:no-repeat;
+color:white;
+overflow: hidden;
+background-size: cover;
+width: 100%;
+height: 100vh;
+
+margin: 0px;
+padding: 0px;
+}
+#forhead{
+
+  font-size:36px;
+  font-weight: bold;
+}
+#forstu{
+  font-size:20px;
+
+}
+
+h1{
+
+  margin-bottom: 15px;
+
+}
+h2 {
+
+  margin-bottom: 15px;
+}
+nav {
+
+  margin-bottom: 15px;
+}
+
+#ulA {
+
+margin-bottom: 10rem;
+}
+
+/* Centered text */
+div {
+
+}
+
+header {
+ background: black;
+ color: white;
+ height: 120px;
+}
+
+#aboutH {
+
+  height: 70px;
+  background-color: #cccccc;
+  overflow: hidden;
+  background-size: cover;
+  background-image: linear-gradient(yellow, green);
+  margin: 0px;
+  padding: 0px;
+}
+
+#aboutXt {
+
+
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}
+
+#imageB {
+
+  width:100%;
+  height: 800px
+}
+
+ol {
+
+  list-style-position: inside;
+}
+li a {
+
+  text-decoration: none;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  padding: 10px ;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+body{
+  margin:0px;
+
+ overflow: scroll;
+
+}
+h1 {
+
+  font-size:2em;
+}

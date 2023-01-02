@@ -1,0 +1,255 @@
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+
+#container {
+  position: relative;
+
+}
+
+#film{
+
+  margin-top: 30px;
+  font-size: 2em;
+
+}
+#main{
+  margin-left: 10px;
+}
+#kaa{
+
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.img{
+}
+.i{
+  margin-left: 20px;
+}
+h1{
+
+  margin-bottom: 10px;
+}
+h2 {
+
+  margin-bottom: 10px;
+}
+nav {
+
+  margin-bottom: 10px;
+}
+#nk{
+  margin-left: 10%;
+}
+#ulA {
+
+margin-bottom: 10rem;
+}
+#vp2{
+font-size:35px;
+font-weight:bold;
+
+}
+#vp3{
+font-size:35px;
+font-weight:bold;
+
+}
+
+
+/* Centered text */
+
+header {
+ background: black;
+ color: white;
+ height: 120px;
+}
+p{
+  font-size: 20px;
+}
+#fil {
+margin: auto;
+margin-left:200px;
+width: 50%;
+height: 50%;
+padding: 300px;
+}
+#bre{
+
+
+  margin-top: 100px;
+}
+#bru{
+
+  margin-bottom: 60px;
+  margin-top: 30px;
+  margin-left: 20px;
+}
+body{
+  margin:0px;
+  padding:0px;
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}
+#tel{
+  font-size: 1.4em;
+  margin-top: 45px;
+}
+#image{
+     position: absolute; right: 4%;
+     margin-top: 80px;
+     margin-left: 10px;
+}
+#imageB{
+     position: absolute; right: 1%;
+     margin-top: 80px;
+
+
+}
+#imagez{
+     position: absolute; right: 4%;
+     margin-top: 10px;
+}
+#nn{
+
+ margin-left: 0%;
+width: 50%
+
+}
+#za{
+  margin-left: 1%
+}
+#na{
+
+ margin-left: 0%;
+
+
+}
+
+
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+
+
+.image {
+  flex-basis: 40%;
+
+}
+
+.text {
+  font-size: 20px;
+  padding-left: 20px;
+}
+#text {
+  font-size: 20px;
+
+}
+#textB{
+  margin-right: 20%
+}
+li a {
+
+  text-decoration: none;
+
+}
+
+h1{
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  padding: 10px ;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+
+.spac{
+
+  padding-top: 15px;
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+ol {
+
+  list-style-position: inside;
+}
+h1 {
+
+  font-size:2em;
+}
+#space{
+
+  margin-top: 100px;
+}

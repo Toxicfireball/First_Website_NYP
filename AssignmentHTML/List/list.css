@@ -1,0 +1,225 @@
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+hr {
+  width: 100%;
+border: 20px solid black;
+border-radius: 0px;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#containerB {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+#bak {
+background-image:url("https://i.redd.it/i2mt6mnbeaf61.jpg");background-repeat:no-repeat;
+color:white;
+overflow: hidden;
+background-size: cover;
+width: 100%;
+height: 100vh;
+margin: 0px;
+padding: 0px;
+
+}
+#forhead{
+
+  font-size:36px;
+  font-weight: bold;
+}
+#forstu{
+  font-size:20px;
+
+}
+
+#mo{
+  padding-left: 4%;
+}
+
+h1{
+
+  margin-bottom: 15px;
+
+}
+h2 {
+
+  margin-bottom: 15px;
+}
+nav {
+
+  margin-bottom: 15px;
+}
+
+#ulA {
+
+margin-bottom: 10rem;
+}
+p{
+  font-size:20px;
+}
+
+/* Centered text */
+#div2 {
+  margin-bottom: 12px;
+  margin-top: 12px;
+}
+
+
+table {
+  empty-cells: show;
+  font-size: 1.5em;
+  width: 60%;
+
+}
+
+th{
+  background-color: blue;
+}
+.ye{
+  background-color: green;
+}
+
+.no {
+  background-color: red;
+}
+#aboutH {
+
+  height: 70px;
+  background-color: #cccccc;
+  overflow: hidden;
+  background-size: cover;
+  background-image: linear-gradient(yellow, green);
+  margin: 0px;
+  padding: 0px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 12px;
+
+  z-index: 1;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 50px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+h1 {
+
+  font-size:2em;
+}
+header {
+ background: black;
+ color: white;
+ height: 120px;
+}
+
+
+
+body{
+  margin:0px;
+  padding:0px;
+}
+
+.tooltiptext {
+
+  padding: 20px;
+  margin-left: 30%
+
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}

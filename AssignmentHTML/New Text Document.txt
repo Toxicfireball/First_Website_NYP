@@ -1,0 +1,7 @@
+TO do list:
+Improve navigation bar(work in progress)
+Make filter exclude(No idea how the hell to do that...)
+popout div elements in filter(no idea)
+make more pages?(low difficulty but lots of time)
+Fancy animations(ahaha what do you think? Possible? lol no)
+TLDR:I am stupid

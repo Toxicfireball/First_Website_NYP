@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body >
+<link rel="stylesheet" type="text/css" href="Filter/filter.css"/>
+
+
+
+
+<p>Display some text when the checkbox is checked:</p>
+
+<div class="Container">
+
+
+<div id="sw"  style= "display:none">
+<div class="filterDiv scifi Fant"><a href="../uni/sw.html"><div class="sw"><div class="txt">Star Wars</div><span class="add">Fantsay |  Scicnce fiction</span></div></a></div></div>
+<div id="Wh40k"style="display:none">
+<div class="filterDiv scifi Fant"><a href="../uni/WH40K.html"><div class="Wh40K"><div class="txt">Warhammer 40K</div><span class="add">Fantasy  |  Science fiction  |  No character focus</span></div></a></div></div>
+
+<div id="Whfb"style="display:none">
+<div class="filterDiv Fant No"><a href="../uni/WHFB.html"><div class="WFB"><div class="txt">Warhammer Fantasy battle</div><span class="add">Fantasy  |  No character focus</span></div></a></div>
+</div>
+
+<div id="ex"style="display:none">
+    <div class="filterDiv scifi Pol mul"><a href="../uni/Expanse.html"><div class="Ex"><div class="txt">The Expanse</div><span class="add">Science Fiction | Multiple character focus | Politics</span> </div></a></div>
+  </div>
+</div>
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+
+
+<label for="myCheck">Checkbox:</label>
+<input type="checkbox" id="myCheck" onclick="myFunction()">
+
+<p id="text" style="display:none">Checkbox is CHECKED!</p>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("sw");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+
+</body>
+<script>
+
+</script>
+</html>

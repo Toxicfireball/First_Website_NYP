@@ -1,0 +1,304 @@
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+#ImageB{
+
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+
+
+}
+#container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#containerB {
+  position: relative;
+  text-align: left;
+  color: black;
+
+}
+#containerC {
+  position: relative;
+  text-align: left;
+  color: black;
+
+}
+h1{
+
+  margin-bottom: 10px;
+}
+h2 {
+
+  margin-bottom: 10px;
+  font-size: 1.5em;
+}
+nav {
+
+  margin-bottom: 10px;
+}
+
+#ulA {
+
+margin-bottom: 10rem;
+}
+#vp2{
+font-size:35px;
+font-weight:bold;
+
+}
+#vp3{
+font-size:35px;
+font-weight:bold;
+text-align: center;
+
+}
+
+
+/* Centered text */
+#imgtextA{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:240%;
+  font-style: oblique;
+}
+#imgtextB{
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  font-size:240%;
+  font-style: oblique;
+  color:white;
+
+}
+table {
+  empty-cells: show;
+  border-collapse: collapse;
+  font-size: 2em;
+}
+#C{
+  height:200px;
+  background-color: black;
+  color:white;
+}
+#imgtextC{
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  font-size:240%;
+  font-weight:bold;
+  font-family:monospace;
+  color:white;
+}
+
+#new{
+
+  color:white;
+}
+header {
+ background: black;
+ color: white;
+ height: 120px;
+}
+
+
+
+body{
+
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}
+#Sub{
+  background-image:url("https://wallpapercave.com/wp/pNHiYr2.jpg");background-repeat:no-repeat;
+  color:white;
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+
+}
+
+#Filter{
+  background-image:url("https://wallpaperaccess.com/full/1141048.jpg");background-repeat:no-repeat;
+  color:white;
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+
+}
+#vo{
+
+  color: white;
+  font-size:2em;
+}
+#vo2{
+
+    color: white;
+    font-size:2em;
+
+}
+#fill{
+  float: left;
+  background-color:yellow;
+  color: black;
+  width:200px;
+  height: 200px;
+  text-align: center;
+
+}
+
+#fill2 {
+  margin: auto;
+  margin-left:200px;
+  width: 50%;
+  height: 50%;
+  padding: 300px;
+}
+.subm {
+
+  float: left;
+  color: black;
+  width:400px;
+  height: 130px;
+  text-align:center;
+  font-size: 3em;
+
+  outline: 5px dashed black;
+  margin: 2px;
+
+}
+.subA .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+.subA:hover .add{
+  visibility: visible;
+  opacity: 1;
+  color:red;
+}
+.subA {
+margin: auto;
+margin-left:200px;
+width: 50%;
+height: 50%;
+padding: 300px;
+}
+#imageB {
+
+  width:100%;
+  height: 800px
+}
+/* Tooltip container */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  padding: 10px ;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+
+.spac{
+
+
+}
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+h1 {
+
+  font-size:2em;
+}
+#ImageA{
+
+  width:100%;
+  height:600px;
+}

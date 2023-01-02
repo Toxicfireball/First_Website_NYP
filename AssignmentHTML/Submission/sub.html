@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Submission form</title>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="sub.css"/>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-analytics.js"></script>
+
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyA44QeCkEhOj8vWCDeEZYn0FfLi4sAjp1w",
+    authDomain: "realmofstories.firebaseapp.com",
+    databaseURL: "https://realmofstories-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "realmofstories",
+    storageBucket: "realmofstories.appspot.com",
+    messagingSenderId: "857448618205",
+    appId: "1:857448618205:web:ba3ebf8093dcd34320a334",
+    measurementId: "G-4P6GJCLTZQ"
+  };
+
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var tday = new Date();
+  var ti=tday.getDate() + " " + tday;
+  function writedata(){
+
+    firebase.database().ref(String(ti + " Submisson")).set({
+      name:document.getElementById("title").value,
+      des:document.getElementById("dis").value,
+      link:document.getElementById("lik").value,
+      user:document.getElementById("nae").value,
+
+    })
+
+  }
+  function al(){
+      alert("You have submitted! Thank you for your feedback")
+  }
+  function run (){
+   al();
+   writedata();
+
+  }
+</script>
+<script type="text/javascript" src="../main.js">
+openNav();
+closeNav();
+</script>
+<header>
+<div class="header">
+<h1 id="new">Submit your ideas here!</h1>
+<div id="mySidenav" class="sidenav">
+
+      <nav>
+        <ul>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <li><a href="../index.html" ><div class="tooltip">Home<span class="tooltiptext"><p class="hov">Homepage here<p></span></div></a></li>
+          <li><a href="../Filter/filter.html"><div class="tooltip">Search<span class="tooltiptext"><p class="hov">Find a story to your taste here</p></span></div></a></li>
+          <li><a href="../Submission/sub.html" ><div class="tooltip">Submission<span class="tooltiptext"><p class="hov">Want to submit? Click here</p></span></div></a></li>
+          <li><a href="../List/List.html"><div class="tooltip">List<span class="tooltiptext"><p class="hov">All the univerese currently here! Including those waiting approval</p></span></div></a></li>
+          <li><a href="../Feedback/Feedback.html" ><div class="tooltip">Feedback<span class="tooltiptext"><p class="hov">Have any feedback?</p></span></div></a></li>
+          <li><a href="../Credits/credits.html"> <div class="tooltip">Credits<span class="tooltiptext"><p class="hov">Acknowledgments of sources</p></span></div></a></li>
+
+        </ul>
+      </nav>
+      </div>
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+
+
+</header>
+</div>
+
+<div id="container">
+
+
+    <fieldset ><legend id="forhead">Submission </legend>
+
+      <p>What is your username?</p>
+      <input type="text" id="nae" name="text">
+      <p>What is your universe submisson name?</p>
+      <input type="text" id="title" name="text">
+      <P> Highly recommended to Copy and paste your response here.</P>
+      <p>Could you describe this universe/story? :</p>
+      <input type="text" id="dis" name="text">
+
+      <p>Please put any links that you may feel usefull :</p>
+      <input type="text" id="lik" name="text">
+
+      <div id="spab">
+      <button name="submit" type="submit" onclick="run()" id="contact-submit" data-submit="Thank you for your feedback!">Submit</button>
+    </div>
+  </<fieldset>
+    <script>
+
+    document.getElementById('title').style.height="70px";
+    document.getElementById('title').style.width="300px";
+    document.getElementById('title').style.fontSize="10pt";
+    document.getElementById('dis').style.height="70px";
+    document.getElementById('dis').style.width="900px";
+    document.getElementById('dis').style.fontSize="10pt";
+    document.getElementById('lik').style.height="70px";
+    document.getElementById('lik').style.width="500px";
+    document.getElementById('lik').style.fontSize="10pt";
+    </script>
+
+
+  </div>

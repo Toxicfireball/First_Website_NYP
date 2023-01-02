@@ -1,0 +1,593 @@
+.container {
+  overflow: hidden;
+}
+hr {
+  width: 100%;
+border: 20px solid black;
+border-radius: 0px;
+}
+
+.filterDiv {
+
+  display: none; /* Hidden by default */
+}
+.halo{
+  float: left;
+  background-image:url("https://wallpaperaccess.com/full/50035.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+  background-size:cover;
+  background-position:center;
+}
+.LOr{
+  float: left;
+  background-image:url("https://i0.wp.com/wallpapersfortech.com/wp-content/uploads/2020/08/lord-of-the-rings-trilogy-posters-combined-1920%C3%971080.jpg?resize=480%2C360&ssl=1");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.ASOIAF{
+  float: left;
+  background-image:url("https://wallpapercave.com/wp/wp8115360.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+
+#sw{
+  float: left;
+  background-image:url("https://cdn.wallpapersafari.com/15/6/8o3xta.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.Ex{
+  float: left;
+  background-image:url("https://vignette.wikia.nocookie.net/expanse/images/4/41/Donnager.png/revision/latest?cb=20181203231456");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+  background-position: center;
+}
+.WFB{
+  float: left;
+  background-image:url("https://venturebeat.com/wp-content/uploads/2017/08/skaven.jpg?w=1200&strip=all");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+    background-position: center;
+}
+
+.Wh40K{
+  float: left;
+  background-image:url("https://external-preview.redd.it/d4hPCx3r-xPizmnpivCmcZpNBhpjZQoos6fJKRhvS7U.jpg?auto=webp&s=6693b10665541e0380d1826d212f1e29020f6487");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+    background-position: center;
+}
+
+.WOT{
+  float: left;
+  background-image:url("https://www.syfy.com/sites/syfy/files/styles/1200x680_hero/public/2019/08/1500x500.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+
+}
+
+#myBtnContainer{
+margin-top: 30px;
+
+}
+#new{
+
+  font-size: 2em;
+  margin-bottom: 100px;
+}
+
+.BFG {
+  float: left;
+  background-image:url("https://wallpapercave.com/wp/erir7A9.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.Cm {
+  float: left;
+  background-image:url("https://upload.wikimedia.org/wikipedia/commons/2/28/Azathoth.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/* Container holding the image and the text */
+*{
+    margin: 0;
+}
+
+#containerB {
+  position: relative;
+  text-align: left;
+  color: black;
+}
+
+#forhead{
+
+  font-size:36px;
+  font-weight: bold;
+}
+#forstu{
+  font-size:20px;
+
+}
+
+h1{
+
+  margin-bottom: 15px;
+
+}
+h2 {
+
+  margin-bottom: 15px;
+}
+nav {
+
+  margin-bottom: 15px;
+}
+
+#ulA {
+
+margin-bottom: 10rem;
+}
+
+/* Centered text */
+div {
+
+}
+
+#emp {
+
+  padding: 30px;
+
+}
+
+header {
+ background: black;
+ color: white;
+ height: 150px;
+}
+.sw {
+  float: left;
+  background-image:url("https://cdn.wallpapersafari.com/15/6/8o3xta.jpg");background-repeat:no-repeat;
+  color: #ffffff;
+  width:200px;
+  height: 200px;
+  text-align: center;
+  margin: 2px;
+}
+.txt{
+  margin-top: 30px;
+  margin-left: 16px;
+  color: red;
+  font-size: 1.3em;
+}
+.sw .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.Wh40K .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.WFB .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.WOT .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.ASOIAF .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+.Ex .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+
+}
+.LOr .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+
+.BFG .add {
+
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.Cm .add {
+
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+
+.halo .add {
+  visibility: hidden;
+  width: 120px;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-top: 400px;
+
+
+  opacity: 0;
+  transition: opacity 1s;
+
+
+}
+#back{
+
+  background-image:url("https://i.pinimg.com/originals/d5/ce/a2/d5cea2c3333f1069e79d1cf2a3aa8651.jpg");background-repeat:no-repeat;
+  overflow: hidden;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+
+}
+.Cm:hover .add{
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.Wh40K:hover .add{
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+.WFB:hover .add{
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.WOT:hover .add{
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+.sw:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.ASOIAF:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+.Ex:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.halo:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.LOr:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+
+.BFG:hover .add {
+  visibility: visible;
+  opacity: 1;
+  color:yellow;
+}
+#aboutH {
+
+  height: 70px;
+  background-color: #cccccc;
+  overflow: hidden;
+  background-size: cover;
+  background-image: linear-gradient(yellow, green);
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  margin:0px;
+}
+
+#aboutXt {
+
+
+}
+header nav ul {
+
+border-collapse:collapse;
+display: inline;
+padding: 10px;
+
+}
+
+header nav ul li {
+
+display:inline;
+padding: 10px ;
+background-color:;white
+border-radius:15px;
+margin:15px;
+
+
+}
+
+#imageB {
+
+  width:100%;
+  height: 800px
+}
+
+ol {
+
+  list-style-position: inside;
+}
+li a {
+
+  text-decoration: none;
+
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  font-size: 0.8em;
+  color: #fff;
+  text-align: center;
+  padding: 10px ;
+  border-radius: 6px;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.hov {
+font-size: 0.8em;
+color:white;
+
+}
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+h1 {
+
+  font-size:2em;
+}
